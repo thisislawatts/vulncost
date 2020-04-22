@@ -7,6 +7,7 @@
   "publisher": "snyk-security",
   "scripts": {
     "DISABLED_postinstall": "node ./node_modules/vscode/bin/install",
+    "release": "semantic-release",
     "check": "eslint src/* && prettier -c ./src/**/*",
     "build": "webpack --mode production",
     "vscode:prepublish": "npm run check && npm run build",
@@ -119,6 +120,7 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.9.5",
+    "@semantic-release/changelog": "^5.0.1",
     "@types/node": "^6.0.40",
     "@types/vscode": "^1.40.0",
     "babel-jest": "^25.3.0",
@@ -126,6 +128,7 @@
     "jest": "^25.3.0",
     "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
+    "semantic-release": "^17.0.7",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11"
   },
